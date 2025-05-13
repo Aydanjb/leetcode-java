@@ -29,15 +29,10 @@ bin/
 .DS_Store
 
 # IntelliJ files
-.idea/
 *.iml
-
-# Build files
-out/
 target/
-
-# OS junk
-.DS_Store
 
 # Java
 *.class
+!/.idea/
+!/leetcode-java.iml
