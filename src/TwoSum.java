@@ -1,6 +1,9 @@
 import java.util.HashMap;
 import java.util.Map;
 
+// Time complexity: O(n)
+// Space complexity: O(n)
+
 public class TwoSum {
     public int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> seen = new HashMap<>();
