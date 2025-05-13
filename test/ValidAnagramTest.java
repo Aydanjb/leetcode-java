@@ -19,7 +19,7 @@ class ValidAnagramTest {
         }
     }
 
-    static Stream<TestCase> TestCases() {
+    static Stream<TestCase> testCases() {
         return Stream.of(
                 // Example 1
                 new TestCase("anagram", "nagaram", true),
@@ -33,7 +33,7 @@ class ValidAnagramTest {
     }
 
     @ParameterizedTest
-    @MethodSource("TestCases")
+    @MethodSource("testCases")
     public void testIsAnagram(TestCase tc) {
         ValidAnagram solution = new ValidAnagram();
         assertEquals(tc.expected, solution.isAnagram(tc.s, tc.t));
