@@ -21,7 +21,9 @@ class ValidPalindromeTest {
         return Stream.of(
                 new TestCase("race a car", false),
                 new TestCase("Racecar", true),
-                new TestCase("abc", false)
+                new TestCase("abc", false),
+                new TestCase(".,", true),
+                new TestCase("A man, a plan, a canal: Panama", true)
         );
     }
 
